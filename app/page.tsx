@@ -41,7 +41,7 @@ export default function Home() {
 
       <section className="container" style={{ paddingBottom: 80, textAlign: "center" }}>
         <h2>Jangan teruskan bisnes berdasarkan tekaan.</h2>
-        <a className="btn" href={calendlyUrl} target="_blank">Book Sekarang di Calendly</a>
+        <a className="btn" href={calendlyUrl} target="_blank">Book Meeting Sekarang</a>
       </section>
     </main>
   );
