@@ -1,4 +1,4 @@
-import Link from "next/link";
+const calendlyUrl = "https://calendly.com/kairelkeflee/30min";
 
 const faqs = [
   ["Data macam mana yang perlu saya hantar?", "Apa-apa data jualan yang awak ada pun boleh — CSV, Excel, PDF, export dari POS, atau screenshot report. Saya akan bantu strukturkan ikut format yang sesuai sebelum analisis."],
@@ -17,7 +17,7 @@ export default function Home() {
             <a href="#cara-kerja">Cara ia berjalan</a>
             <a href="#harga">Harga</a>
             <a href="#faq">FAQ</a>
-            <Link href="/booking" className="btn btn-primary">Tempah Sekarang</Link>
+            <a href={calendlyUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Tempah Sekarang</a>
           </nav>
         </div>
       </header>
@@ -31,7 +31,7 @@ export default function Home() {
             Saya baca data awak, kenal pasti punca masalah, dan terangkan step by step apa yang perlu dibuat — live dalam Zoom bersama awak.
           </p>
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 16 }}>
-            <Link href="/booking" className="btn btn-primary">Tempah Sesi Saya — RM499</Link>
+            <a href={calendlyUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Tempah Sesi Saya — RM499</a>
             <a href="#apa-dapat" className="btn btn-ghost">Tengok apa yang awak dapat ↓</a>
           </div>
           <p style={{ fontSize: ".78rem", color: "var(--muted)", marginTop: 12 }}>
@@ -94,7 +94,7 @@ export default function Home() {
               <p style={{ margin: "2px 0" }}>sekali bayar</p>
               <p style={{ margin: 0, fontSize: ".85rem" }}>Tiada langganan. Tiada hidden charges. Satu deliverable yang jelas.</p>
             </div>
-            <Link href="/booking" className="btn btn-primary">Tempah Sesi Saya Sekarang →</Link>
+            <a href={calendlyUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Tempah Sesi Saya Sekarang →</a>
           </div>
         </div>
       </section>
@@ -202,7 +202,7 @@ export default function Home() {
             <p>Boleh. Minimum 24 jam sebelum slot asal. Kami akan bantu tukar ke slot terdekat yang tersedia.</p>
           </details>
           <div style={{ marginTop: 20 }}>
-            <Link href="/booking" className="btn btn-primary">Tempah Sekarang</Link>
+            <a href={calendlyUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Tempah Sekarang</a>
           </div>
         </div>
       </section>
@@ -212,7 +212,7 @@ export default function Home() {
           <h2 className="display" style={{ marginTop: 0 }}>Jangan tunggu sampai masalah jadi lebih mahal.</h2>
           <p>Tempah sesi sekarang, dapatkan diagnosis jelas, dan terus tahu langkah paling penting untuk naikkan prestasi bisnes awak.</p>
           <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/booking" className="btn btn-primary">Tempah Sesi RM499 Sekarang</Link>
+            <a href={calendlyUrl} target="_blank" rel="noreferrer" className="btn btn-primary">Tempah Sesi RM499 Sekarang</a>
           </div>
           <p style={{ fontSize: ".8rem", marginTop: 10 }}>✅ Pembayaran selamat · ✅ Data dirahsiakan · ✅ Slot terhad · ✅ Support disediakan</p>
         </div>
