@@ -16,6 +16,7 @@ export default function Home() {
           <nav className="nav-links">
             <a href="#cara-kerja">Cara ia berjalan</a>
             <a href="#harga">Harga</a>
+            <a href="#faq">FAQ</a>
             <Link href="/booking" className="btn btn-primary">Tempah Sekarang</Link>
           </nav>
         </div>
@@ -182,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section faq">
+      <section id="faq" className="section faq">
         <div className="container">
           <p className="badge">Soalan lazim</p>
           <h2 className="display">Soalan yang biasa ditanya</h2>
@@ -192,11 +193,43 @@ export default function Home() {
               <p>{a}</p>
             </details>
           ))}
+          <details>
+            <summary>Boleh refund ke?<span style={{ color: "var(--gold)" }}>+</span></summary>
+            <p>Disebabkan kerja analisis bermula sebaik tempahan disahkan, bayaran tidak refundable selepas proses audit dimulakan. Jika belum mula, kita boleh bincang kes demi kes.</p>
+          </details>
+          <details>
+            <summary>Boleh reschedule ke?<span style={{ color: "var(--gold)" }}>+</span></summary>
+            <p>Boleh. Minimum 24 jam sebelum slot asal. Kami akan bantu tukar ke slot terdekat yang tersedia.</p>
+          </details>
           <div style={{ marginTop: 20 }}>
             <Link href="/booking" className="btn btn-primary">Tempah Sekarang</Link>
           </div>
         </div>
       </section>
+
+      <section className="section">
+        <div className="container card" style={{ padding: 24, textAlign: "center" }}>
+          <h2 className="display" style={{ marginTop: 0 }}>Jangan tunggu sampai masalah jadi lebih mahal.</h2>
+          <p>Tempah sesi sekarang, dapatkan diagnosis jelas, dan terus tahu langkah paling penting untuk naikkan prestasi bisnes awak.</p>
+          <div style={{ display: "flex", gap: 10, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/booking" className="btn btn-primary">Tempah Sesi RM499 Sekarang</Link>
+          </div>
+          <p style={{ fontSize: ".8rem", marginTop: 10 }}>✅ Pembayaran selamat · ✅ Data dirahsiakan · ✅ Slot terhad · ✅ Support disediakan</p>
+        </div>
+      </section>
+
+      <footer className="section" style={{ paddingTop: 28, paddingBottom: 32 }}>
+        <div className="container" style={{ display: "flex", justifyContent: "space-between", gap: 12, flexWrap: "wrap" }}>
+          <p style={{ margin: 0, fontSize: ".85rem" }}>© 2026 Klenek Bisnes. Semua hak cipta terpelihara.</p>
+          <div style={{ display: "flex", gap: 14, fontSize: ".85rem" }}>
+            <a href="https://wa.me/60105424256" target="_blank">WhatsApp</a>
+            <a href="mailto:muhdazharali98@gmail.com">Email</a>
+            <a href="#">Instagram</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
